@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>SnapWork Login</title>
+
+<link rel="stylesheet"
+href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+<link rel="stylesheet"
+href="{{ url_for('static', filename='login.css') }}">
+
+</head>
+
+<body>
+
+<div class="login-container">
+
+<div class="logo">
+Snap<span>Work</span>
+</div>
+
+<h2>Log in to SnapWork</h2>
+
+
+<!-- ✅ FORM START -->
+<form method="POST" action="/login">
+
+
+<input
+type="text"
+name="email"
+placeholder="Username or Email"
+class="input-box"
+required
+>
+
+
+<input
+type="password"
+name="password"
+placeholder="Password"
+class="input-box"
+required
+>
+
+
+<button
+type="submit"
+class="btn continue-btn"
+>
+Continue
+</button>
+
+</form>
+<!-- ✅ FORM END -->
+
+
+<div class="divider">or</div>
+
+
+<button class="btn google-btn">
+Continue with Google
+</button>
+
+
+<button class="btn apple-btn">
+Continue with Apple
+</button>
+
+
+<div class="signup">
+<p>Don't have an SnapWork account?</p>
+<a href="/">Sign Up</a>
+</div>
+
+</div>
+
+</body>
+</html>
